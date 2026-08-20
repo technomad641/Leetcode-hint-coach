@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0b0f" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>LeetCode Hint Coach</title>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div><div class="eyebrow">NEETCODE STUDY COACH</div><h1>Hint Coach</h1></div>
+      <button id="installHelp" class="icon-btn" aria-label="Install help">＋</button>
+    </header>
+    <section class="progress-card"><div class="progress-row"><span id="progressText">0 / 0 solved</span><span id="streakText">Ready</span></div><div class="progress-track"><div id="progressBar" class="progress-bar"></div></div></section>
+    <nav class="tabs" aria-label="Sections"><button class="tab active" data-tab="today">Today</button><button class="tab" data-tab="queue">Queue</button><button class="tab" data-tab="review">Review</button></nav>
+    <section id="today" class="panel active-panel"><div class="label">NEXT PROBLEM</div><div id="problemCard" class="problem-card"></div><div class="actions"><button id="solvedBtn" class="primary">✓ Solved</button><button id="reviewBtn" class="secondary">↻ Review</button><button id="skipBtn" class="secondary">Skip</button></div><button id="openProblem" class="link-btn">Open problem ↗</button></section>
+    <section id="queue" class="panel"><div class="label">ALL PROBLEMS</div><div id="queueList" class="list"></div></section>
+    <section id="review" class="panel"><div class="label">NEEDS REVIEW</div><div id="reviewList" class="list"></div></section>
+  </main>
+  <div id="hintSheet" class="sheet hidden" role="dialog" aria-modal="true"><div class="sheet-inner"><div class="sheet-head"><span>HINTS</span><button id="closeHints">✕</button></div><h2 id="hintTitle"></h2><div id="hints"></div><button id="nextHint" class="primary full">Show next hint</button></div></div>
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
