@@ -1,0 +1,10 @@
+{
+  "name":"LeetCode Hint Coach",
+  "short_name":"Hint Coach",
+  "start_url":"./index.html",
+  "display":"standalone",
+  "background_color":"#08090d",
+  "theme_color":"#0b0b0f",
+  "description":"One-problem-at-a-time LeetCode practice with progressive hints.",
+  "icons":[]
+}
